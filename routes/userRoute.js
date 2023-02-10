@@ -1,9 +1,15 @@
 const express = require('express');
 
-var controller = require('../controllers/user.controller');
+const controller = require('../controllers/user.controller');
+const validate = require('../validate/userValidate');
+const authMiddleware = require('../middlewares/authMiddleware.js');
 
-var router = express.Router();
+const router = express.Router();
 
+router.get('/cookie', function(req, res, next){
+    res.cookie('user-id', 1235);
+    res.send 
+});
 
 router.get('/', controller.index);
 
@@ -13,7 +19,7 @@ router.get('/create', controller.create);
 
 router.get('/:id',controller.get);
 
-router.post('/create',controller.postCreate);
+router.post('/create', validate.postCreate, controller.postCreate);
 
 
 module.exports = router;

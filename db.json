@@ -1,21 +1,23 @@
 {
   "users": [
     {
-      "name": "123",
-      "id": "qnIqryk6H"
-    },
-    {
       "name": "phuong",
-      "id": "zj7vtj_Td"
+      "phone": "0123456789",
+      "id": "wJVOlUate",
+      "email": "1234@gmail.com",
+      "password": "81dc9bdb52d04dc20036dbd8313ed055"
     },
     {
       "name": "nam ",
-      "id": "13oihZjLx"
+      "phone": "0929150029",
+      "id": "a76xDrywy",
+      "email": "123@gmail.com",
+      "password": "202cb962ac59075b964b07152d234b70"
     },
     {
-      "name": "phuong",
-      "phone": "0123456789",
-      "id": "wJVOlUate"
+      "name": "phu",
+      "phone": "123975641",
+      "id": "SCOPXtdQw"
     }
   ]
 }
